@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Formulario de contacto</h1>
+  <form action="/enviar" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required />
+    <input type="email" name="correo" placeholder="Tu correo" required />
+    <input type="tel" name="telefono" placeholder="Tu teléfono" />
+    <select name="servicio" required>
+      <option value="">Selecciona un servicio</option>
+      <option value="consultoria">Consultoría</option>
+      <option value="desarrollo">Desarrollo web</option>
+      <option value="soporte">Soporte técnico</option>
+    </select>
+    <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
